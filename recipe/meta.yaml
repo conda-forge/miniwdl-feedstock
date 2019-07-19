@@ -25,6 +25,7 @@ requirements:
     - docker-py
     - argcomplete
     - lark-parser 0.7.1
+    - pygtail >=0.11.0
 
   run:
     - python >=3.6
@@ -32,6 +33,7 @@ requirements:
     - docker-py
     - argcomplete
     - lark-parser 0.7.1
+    - pygtail >=0.11.0
 test:
   imports:
     - WDL
@@ -51,14 +53,10 @@ about:
   license: "MIT"
   license_family: "MIT"
   license_file: "LICENSE"
-  summary: "A static analysis toolkit for the Workflow Description Language"
+  summary: "Developer toolkit for the Workflow Description Language (WDL)"
   description: >
-    Miniwdl is a library for parsing WDL documents into a type-checked abstract
-    syntax tree (AST), providing a foundation for new runtime systems, developer
-    tooling, and language experimentation. It also includes command-line tools
-    supporting the WDL development cycle, including a "linter" to statically
-    analyze WDL documents for errors and oversights, and a Cromwell wrapper to
-    make it more convenient to test a workflow locally.
+    miniwdl provides WDL developer productivity tools, a local runtime
+    implementation, and a foundation for language experimentation.
 
 extra:
   recipe-maintainers:
