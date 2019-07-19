@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 771a3dccecd6b0f195d27bf0586e1d2dd03ef4eae80265b770e79b35547306a7
+  sha256: 9785def2e5d42cd4cf0cedc6aadba8a7798dc013bb964f021c7ca4d72c5488d7
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - docker-py
     - argcomplete
     - lark-parser 0.7.1
+    - pygtail >=0.11.0
 
   run:
     - python >=3.6
@@ -32,6 +33,7 @@ requirements:
     - docker-py
     - argcomplete
     - lark-parser 0.7.1
+    - pygtail >=0.11.0
 test:
   imports:
     - WDL
@@ -51,14 +53,10 @@ about:
   license: "MIT"
   license_family: "MIT"
   license_file: "LICENSE"
-  summary: "A static analysis toolkit for the Workflow Description Language"
+  summary: "Developer toolkit for the Workflow Description Language (WDL)"
   description: >
-    Miniwdl is a library for parsing WDL documents into a type-checked abstract
-    syntax tree (AST), providing a foundation for new runtime systems, developer
-    tooling, and language experimentation. It also includes command-line tools
-    supporting the WDL development cycle, including a "linter" to statically
-    analyze WDL documents for errors and oversights, and a Cromwell wrapper to
-    make it more convenient to test a workflow locally.
+    miniwdl provides WDL developer productivity tools, a local runtime
+    implementation, and a foundation for language experimentation.
 
 extra:
   recipe-maintainers:
