@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 9785def2e5d42cd4cf0cedc6aadba8a7798dc013bb964f021c7ca4d72c5488d7
+  sha256: 293999911ed799ff594e8562e9fd1196fb1cfa1972220a0feef9c1bd13169d72
 
 build:
   noarch: python
