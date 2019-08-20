@@ -7,9 +7,9 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A static analysis toolkit for the Workflow Description Language
+Summary: Developer toolkit for the Workflow Description Language (WDL)
 
-Miniwdl is a library for parsing WDL documents into a type-checked abstract syntax tree (AST), providing a foundation for new runtime systems, developer tooling, and language experimentation. It also includes command-line tools supporting the WDL development cycle, including a "linter" to statically analyze WDL documents for errors and oversights, and a Cromwell wrapper to make it more convenient to test a workflow locally.
+miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation.
 
 
 Current build status
