@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 425255f8cdd297938c00ce482479285d96a92c613cec2269a0f6ce4986fe0da7
+  sha256: 8e878b2c9a5681c5bbe5b9ca07fc65f42c3287923747311984bf206aad9e706f
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
     - setuptools
     - docker-py
+    - psutil
     - argcomplete
     - coloredlogs
     - lark-parser 0.7.5
@@ -32,9 +33,10 @@ requirements:
     - python >=3.6
     - setuptools
     - docker-py
+    - psutil
     - argcomplete
     - coloredlogs
-    - lark-parser 0.7.2
+    - lark-parser 0.7.5
     - pygtail >=0.11.0
 test:
   imports:
