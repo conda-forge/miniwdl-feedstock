@@ -1,18 +1,18 @@
 {% set name = "miniwdl" %}
-{% set version = "0.6.5" %}
+{% set version = "0.7.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 8604e53137f78546ca4d2e048924a04d9067458761efcf456f8171e5f2c5e999
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e76f553331c603d798f3768eccea769d134672e83eb35478c987bc1f613d5396
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
     - miniwdl = WDL.CLI:main
 
@@ -55,14 +55,13 @@ test:
     - miniwdl --help
 
 about:
-  home: "https://github.com/chanzuckerberg/miniwdl"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "Developer toolkit for the Workflow Description Language (WDL)"
+  home: https://github.com/chanzuckerberg/miniwdl
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Developer toolkit for the Workflow Description Language (WDL)
   description: >
-    miniwdl provides WDL developer productivity tools, a local runtime
-    implementation, and a foundation for language experimentation.
+    miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation.
 
 extra:
   recipe-maintainers:
