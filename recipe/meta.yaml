@@ -22,6 +22,7 @@ requirements:
     - pbr
     - python >=3.6
     - setuptools
+    - xdg
     - importlib_metadata
     - docker-py
     - regex
@@ -33,6 +34,7 @@ requirements:
   run:
     - python >=3.6
     - setuptools
+    - xdg
     - importlib_metadata
     - docker-py
     - regex
