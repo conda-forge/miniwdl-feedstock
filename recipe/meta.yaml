@@ -24,24 +24,26 @@ requirements:
     - setuptools
     - xdg
     - importlib_metadata
-    - docker-py
+    - docker-py >=3.4.0
     - regex
-    - argcomplete
-    - coloredlogs
+    - argcomplete >=1.11.0
+    - coloredlogs >=11.0
     - lark-parser 0.8.5
     - pygtail >=0.11.0
+    - python-json-logger >=0.1.11
 
   run:
     - python >=3.6
     - setuptools
     - xdg
     - importlib_metadata
-    - docker-py
+    - docker-py >=3.4.0
     - regex
-    - argcomplete
-    - coloredlogs
+    - argcomplete >=1.11.0
+    - coloredlogs >=11.0
     - lark-parser 0.8.5
     - pygtail >=0.11.0
+    - python-json-logger >=0.1.11
 test:
   imports:
     - WDL
