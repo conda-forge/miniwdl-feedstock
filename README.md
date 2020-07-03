@@ -5,7 +5,7 @@ Home: https://github.com/chanzuckerberg/miniwdl
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Developer toolkit for the Workflow Description Language (WDL)
 
