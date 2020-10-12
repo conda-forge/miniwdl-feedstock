@@ -5,7 +5,7 @@ Home: https://github.com/chanzuckerberg/miniwdl
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/miniwdl-feedstock/blob/master/LICENSE.txt)
 
 Summary: Developer toolkit for the Workflow Description Language (WDL)
 
@@ -119,7 +119,4 @@ Feedstock Maintainers
 
 * [@mlin](https://github.com/mlin/)
 * [@rhpvorderman](https://github.com/rhpvorderman/)
-
-
-<!-- dummy commit to enable rerendering -->
 
