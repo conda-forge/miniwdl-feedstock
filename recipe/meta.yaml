@@ -31,7 +31,8 @@ requirements:
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
     - ruamel.yaml >=0.15.37
-    - lark-parser 0.10.0
+    - bullet-python >=2.2.0
+    - lark-parser 0.11.1
 
   run:
     - python >=3.6
@@ -45,7 +46,8 @@ requirements:
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
     - ruamel.yaml >=0.15.37
-    - lark-parser 0.10.0
+    - bullet-python >=2.2.0
+    - lark-parser 0.11.1
 
 test:
   imports:
@@ -58,6 +60,8 @@ test:
     - WDL.Type
     - WDL.Value
     - WDL.Walker
+    - WDL.Lint
+    - WDL.runtime
   commands:
     - miniwdl --version
 
