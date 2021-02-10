@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "0.11.2" %}
+{% set version = "0.11.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b7c6322853c09876dc246380f5d7125427f3859343f6d4cf0853f1b05e5f30b2
+  sha256: 9de0cf2b0d8ec641e515990b5f86e329eed4a510dab1d160e145598e8a70d694
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - importlib_metadata >=1.0.0
     - docker-py >=3.4.0
     - regex >=v39.0.1
-    - argcomplete >=1.11.0
+    - argcomplete >=1.12.0
     - coloredlogs >=11.0
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
