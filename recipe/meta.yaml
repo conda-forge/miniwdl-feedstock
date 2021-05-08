@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 96373e7710c9a22b1883a16ca856c53c57121953dad94eda0a34b3ef25686387
+  sha256: 75714b1601eafbe2a31499c8651ffaf194a5294f78cd477742d168d2594cc134
 
 build:
   noarch: python
@@ -25,14 +25,14 @@ requirements:
     - xdg >=2.0.0
     - importlib_metadata >=1.0.0
     - docker-py >=3.4.0
-    - regex >=v39.0.1
+    - regex >=2020.4.4
     - argcomplete >=1.12.0
     - coloredlogs >=11.0
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
     - ruamel.yaml >=0.15.37
     - bullet-python >=2.2.0
-    - lark-parser 0.11.1
+    - lark-parser 0.11.3
 
   run:
     - python >=3.6
@@ -40,14 +40,14 @@ requirements:
     - xdg >=2.0.0
     - importlib_metadata >=1.0.0
     - docker-py >=3.4.0
-    - regex >=v39.0.1
+    - regex >=2020.4.4
     - argcomplete >=1.11.0
     - coloredlogs >=11.0
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
     - pyyaml >=5.4.0
     - bullet-python >=2.2.0
-    - lark-parser 0.11.1
+    - lark-parser 0.11.3
 
 test:
   imports:
