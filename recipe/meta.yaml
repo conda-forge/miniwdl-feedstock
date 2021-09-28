@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40526596e1b98a97fd1255805bd5fdcd8b218458eb320d440120c711015a2c82
+  sha256: 69552a85a6b5559002912e57eda1129606e0655c56453a7000dc96f403791afb
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
     - python-json-logger >=2.0.0
     - ruamel.yaml >=0.15.37
     - bullet-python >=2.2.0
-    - lark-parser 0.11.3
+    - lark-parser 0.12.0
 
   run:
     - python >=3.6
