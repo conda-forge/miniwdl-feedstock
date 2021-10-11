@@ -33,6 +33,7 @@ requirements:
     - ruamel.yaml >=0.15.37
     - bullet-python >=2.2.0
     - lark-parser 0.12.0
+    - psutil >=5.8.0
 
   run:
     - python >=3.6
@@ -47,7 +48,8 @@ requirements:
     - python-json-logger >=2.0.0
     - pyyaml >=5.4.0
     - bullet-python >=2.2.0
-    - lark-parser 0.11.3
+    - lark-parser 0.12.0
+    - psutil >=5.8.0
 
 test:
   imports:
@@ -62,6 +64,7 @@ test:
     - WDL.Walker
     - WDL.Lint
     - WDL.runtime
+    - WDL.runtime.backend
   commands:
     - miniwdl --version
 
