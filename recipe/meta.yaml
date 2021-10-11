@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.2.3" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 69552a85a6b5559002912e57eda1129606e0655c56453a7000dc96f403791afb
+  sha256: 074af515fb7832ac1dde9777b81a91213620ff707ab276ac6dfcea665ff6280f
 
 build:
   noarch: python
@@ -33,6 +33,7 @@ requirements:
     - ruamel.yaml >=0.15.37
     - bullet-python >=2.2.0
     - lark-parser 0.12.0
+    - psutil >=5.8.0
 
   run:
     - python >=3.6
@@ -47,7 +48,8 @@ requirements:
     - python-json-logger >=2.0.0
     - pyyaml >=5.4.0
     - bullet-python >=2.2.0
-    - lark-parser 0.11.3
+    - lark-parser 0.12.0
+    - psutil >=5.8.0
 
 test:
   imports:
@@ -62,6 +64,7 @@ test:
     - WDL.Walker
     - WDL.Lint
     - WDL.runtime
+    - WDL.runtime.backend
   commands:
     - miniwdl --version
 
