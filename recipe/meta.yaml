@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dd7068b6434c95a2b06f79456869f58e7a857ab527a0c5d90b7d274b1d2ad4ca
+  sha256: 5d1acf09ae134a3ffa8857d082433954316b86f760e5f64d6c57b4945c353fd1
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ requirements:
     - python >=3.6
     - setuptools
     - xdg >=2.0.0
-    - importlib_metadata >=1.0.0
+    - importlib_metadata >=3.10.1
     - docker-py >=3.4.0
     - regex >=2020.4.4
     - argcomplete >=1.11.0
