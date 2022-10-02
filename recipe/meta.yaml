@@ -39,7 +39,7 @@ requirements:
     - python >=3.6
     - setuptools
     - xdg >=2.0.0
-    - importlib_metadata >=1.0.0
+    - importlib_metadata >=3.10.1
     - docker-py >=3.4.0
     - regex >=2020.4.4
     - argcomplete >=1.11.0
