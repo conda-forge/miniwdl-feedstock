@@ -30,9 +30,9 @@ requirements:
     - coloredlogs >=11.0
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
-    - pyyaml >=6.0.0
+    - pyyaml >=5.4.1
     - bullet-python >=2.2.0
-    - lark 1.1.2
+    - lark 1.1.5
     - psutil >=5.8.0
 
   run:
@@ -46,9 +46,9 @@ requirements:
     - coloredlogs >=11.0
     - pygtail >=0.11.0
     - python-json-logger >=2.0.0
-    - pyyaml >=6.0.0
+    - pyyaml >=5.4.1
     - bullet-python >=2.2.0
-    - lark 1.1.2
+    - lark 1.1.5
     - psutil >=5.8.0
 
 test:
