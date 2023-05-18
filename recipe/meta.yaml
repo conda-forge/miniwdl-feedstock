@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.9.1" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5aaaf0988697df1bd646cf19ffda4d1b69dd5aacf00194496ccfac43c32b3aa4
+  sha256: cb297b80135d3ce5fce3d497b6f83205f1c39d68c7fbff763b0afbc3c1efcf16
 
 build:
   noarch: python
@@ -26,14 +26,14 @@ requirements:
     - importlib_metadata >=1.0.0
     - docker-py >=3.4.0
     - regex >=2020.4.4
-    - argcomplete >=1.12.0
-    - coloredlogs >=11.0
-    - pygtail >=0.11.0
-    - python-json-logger >=2.0.0
-    - pyyaml >=5.4.1
-    - bullet-python >=2.2.0
-    - lark 1.1.5
-    - psutil >=5.8.0
+    - argcomplete >=1.12.0,<2
+    - coloredlogs >=15,<16
+    - pygtail >=0.14.0
+    - python-json-logger >=2,<3
+    - pyyaml >=5.4.1,<7
+    - bullet-python >=2,<3
+    - lark >=1.1,<1.2
+    - psutil >=5,<6
 
   run:
     - python >=3.6
@@ -42,14 +42,14 @@ requirements:
     - importlib_metadata >=3.10.1
     - docker-py >=3.4.0
     - regex >=2020.4.4
-    - argcomplete >=1.11.0
-    - coloredlogs >=11.0
-    - pygtail >=0.11.0
-    - python-json-logger >=2.0.0
-    - pyyaml >=5.4.1
-    - bullet-python >=2.2.0
-    - lark 1.1.5
-    - psutil >=5.8.0
+    - argcomplete >=1.12.0,<2
+    - coloredlogs >=15,<16
+    - pygtail >=0.14.0
+    - python-json-logger >=2,<3
+    - pyyaml >=5.4.1,<7
+    - bullet-python >=2,<3
+    - lark >=1.1,<1.2
+    - psutil >=5,<6
 
 test:
   imports:
