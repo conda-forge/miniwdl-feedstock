@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.12.0" %}
+{% set version = "1.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bfe731efdb208b83ef71e2afb7c46edbf96e761e4e6a549416ee564e2e3addbf
+  sha256: 3eeef08b0f445dfab9ba7bbe9d2ec192227bdbe194ba579808f75386bdfd5e67
 
 build:
   noarch: python
@@ -19,37 +19,36 @@ build:
 requirements:
   host:
     - pip
-    - pbr
-    - python >=3.6
+    - python >=3.8
     - setuptools
-    - xdg >=2.0.0
-    - importlib_metadata >=1.0.0
-    - docker-py >=3.4.0
-    - regex >=2020.4.4
-    - argcomplete >=1.12.0,<2
-    - coloredlogs >=15,<16
-    - pygtail >=0.14.0
-    - python-json-logger >=2,<3
-    - pyyaml >=5.4.1,<7
-    - bullet-python >=2,<3
-    - lark >=1.1,<1.2
-    - psutil >=5,<6
-
-  run:
-    - python >=3.6
-    - setuptools
-    - xdg >=2.0.0
+    - xdg >=5.0.0
     - importlib_metadata >=3.10.1
     - docker-py >=3.4.0
     - regex >=2020.4.4
-    - argcomplete >=1.12.0,<2
+    - argcomplete >=3,<4
     - coloredlogs >=15,<16
     - pygtail >=0.14.0
     - python-json-logger >=2,<3
     - pyyaml >=5.4.1,<7
     - bullet-python >=2,<3
     - lark >=1.1,<1.2
-    - psutil >=5,<6
+    - psutil >=5,<7
+
+  run:
+    - python >=3.8
+    - setuptools
+    - xdg >=5.0.0
+    - importlib_metadata >=3.10.1
+    - docker-py >=3.4.0
+    - regex >=2020.4.4
+    - argcomplete >=3,<4
+    - coloredlogs >=15,<16
+    - pygtail >=0.14.0
+    - python-json-logger >=2,<3
+    - pyyaml >=5.4.1,<7
+    - bullet-python >=2,<3
+    - lark >=1.1,<1.2
+    - psutil >=5,<7
 
 test:
   imports:
