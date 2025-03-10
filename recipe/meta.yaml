@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
     - miniwdl = WDL.CLI:main
@@ -21,24 +21,14 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools
-    - xdg >=5.0.0
-    - importlib_metadata >=3.10.1
-    - docker-py >=3.4.0
-    - regex >=2020.4.4
-    - argcomplete >=3,<4
-    - coloredlogs >=15,<16
-    - pygtail >=0.14.0
-    - python-json-logger >=2,<3
-    - pyyaml >=5.4.1,<7
-    - bullet-python >=2,<3
-    - lark >=1.1,<1.2
-    - psutil >=5,<7
+    - setuptools_scm >=6
+    - wheel
 
   run:
     - python >={{ python_min }}
     - setuptools
     - xdg >=5.0.0
-    - importlib_metadata >=3.10.1
+    - importlib-metadata >=3.10.1
     - docker-py >=3.4.0
     - regex >=2020.4.4
     - argcomplete >=3,<4
