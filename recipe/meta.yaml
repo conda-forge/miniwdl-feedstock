@@ -1,5 +1,5 @@
 {% set name = "miniwdl" %}
-{% set version = "1.12.1" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3eeef08b0f445dfab9ba7bbe9d2ec192227bdbe194ba579808f75386bdfd5e67
+  sha256: b062583de1fdf6ede2fd7d324444f1f82450edfaca95ee8a0bb03248055793e9
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
     - miniwdl = WDL.CLI:main
