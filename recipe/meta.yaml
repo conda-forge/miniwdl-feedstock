@@ -1,13 +1,13 @@
 {% set name = "miniwdl" %}
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7bed6e7ea25ef1ee3bc4dd2d1b3a961a52262537f6f322704e53a47a4a3bda0a
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 121f684373405fce44b8f3100a6e133c4e71e198376f3c024bf9acac39167441
 
 build:
   noarch: python
